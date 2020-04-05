@@ -28,8 +28,8 @@ matplotlib.rcParams['ytick.labelsize'] = 20
 
 # Normalized innovation squared (NIS) data values for 
 # radar and laser measurements
-dataRadar = np.loadtxt("NIS_radar.txt", usecols=[0], skiprows=1)
-dataLaser = np.loadtxt("NIS_laser.txt", usecols=[0], skiprows=1)
+dataRadar = np.loadtxt("./NIS_radar.txt", usecols=[0], skiprows=1)
+dataLaser = np.loadtxt("./NIS_laser.txt", usecols=[0], skiprows=1)
 # We skip the first row to cut out the unrealistically high NIS value 
 # from the first measurement.  The Kalman filter has not found its groove yet.
 
